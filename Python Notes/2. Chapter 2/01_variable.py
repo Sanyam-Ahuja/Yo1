@@ -7,7 +7,7 @@ d = True
 # d = None
 
 # Printing the variables
-print(a)
+print(b)
 print(b)
 print(c)
 print(d)
