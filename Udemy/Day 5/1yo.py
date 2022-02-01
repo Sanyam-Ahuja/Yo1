@@ -1,4 +1,4 @@
-j = 0
+l = 0
 for n in range(1000):
-    j += n
-print(j)
+    l += n
+print(l)
