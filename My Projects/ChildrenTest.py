@@ -1,0 +1,12 @@
+print("Q.1  Enter A Valid Value What is Smaller Than 70")
+_1a = input("Enter Your Answer")
+_1a = int(_1a)
+_1 = (_1a <70)
+print(_1)
+
+print("Q.2  Enter A Valid Value What is the sum of 28 and 100")
+_2a = input("Enter Your Answer")
+_2a = float(_2a)
+_2a = int(_2a)
+_2 = (_2a ==128)
+print(_2)
