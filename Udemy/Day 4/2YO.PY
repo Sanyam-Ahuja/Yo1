@@ -1,6 +1,6 @@
 import random
 
-# 🚨 Don't change the code below 👇
+#  Don't change the code below 👇
 test_seed = int(input("Create a seed number: "))
 random.seed(test_seed)
 
