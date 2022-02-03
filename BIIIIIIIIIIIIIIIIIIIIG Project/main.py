@@ -8,6 +8,7 @@ dict = PyDictionary()
 meaning = dict.meaning(chosen_1)
 print(f"This is The Meaning Of The Word You Are Going To Guess{meaning}")
 chose_edit = list(chosen)
+print(chosen_1)
 def anti_vowel(c = input):
     newstr = c
     vowels = ('b','R', 'c', 'd', 'f', 'g', 'h', 'j','k','l','m','n','p','q','r','s','t','v','w','x','y','z')
@@ -22,24 +23,23 @@ def anti_vowel(c = input):
     print(newstr)
     endgame = False
     while not endgame:
-        for position in range(len(chose_edit)):
-            print(f"Right now U have {lives} lives")
-            guess = input("What letter Do U want To enter now\n").lower()
-            for position_2 in range(len(chosen)):
-                letter = chosen[position_2]
-                if letter == guess:
-                    newstr[position_2] = letter
-                    print(newstr)
-                elif guess== "a" or guess == "e" or guess =="i" or guess =="o" or guess =="u":
-                    print("Pls Dont enter Any Vowels They are already given i.e dont use a e i o u")
-            if "_" not in newstr:
+        print(f"Right now U have {lives} lives")
+        guess = input("What letter Do U want To enter now\n").lower()
+        for position_2 in range(len(chosen)):
+            letter = chosen[position_2]
+            if letter == guess:
+                newstr[position_2] = letter
+                print(newstr)
+            elif guess== "a" or guess == "e" or guess =="i" or guess =="o" or guess =="u":
+                print("Pls Dont enter Any Vowels They are already given i.e dont use a e i o u")
+        if "_" not in newstr:
+            endgame = True
+            print("You win.")
+        if guess not in chosen:
+            lives -= 1
+            print(f"Oh You Lost 1 life, You have {lives} lives left\n {newstr}")
+            if lives == 0:
                 endgame = True
-                print("You win.")
-            if guess not in chosen:
-                lives -= 1
-                print(f"Oh You Lost 1 life, You have {lives} lives left\n {newstr}")
-                if lives == 0:
-                    endgame = True
-                    print("Oh No You Lost The Game")
+                print("Oh No You Lost The Game")
 anti_vowel(chosen_1)
 print(f"The Real Word Was {chosen_1}")
