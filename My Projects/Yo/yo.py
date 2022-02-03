@@ -9,4 +9,5 @@ while t < 1_00_000:
     engin.setProperty('voice', voices[2].id)
     engin.setProperty("rate", 400)
     engin.say(t)
+    print(t)
     engin.runAndWait()
