@@ -1,4 +1,6 @@
 import random
+import english_words
+import PyDictionary
 from english_words import english_words_set
 from PyDictionary import PyDictionary
 words = list(english_words_set)
@@ -8,7 +10,6 @@ dict = PyDictionary()
 meaning = dict.meaning(chosen_1)
 print(f"This is The Meaning Of The Word You Are Going To Guess{meaning}")
 chose_edit = list(chosen)
-print(chosen_1)
 def anti_vowel(c = input):
     newstr = c
     vowels = ('b','R', 'c', 'd', 'f', 'g', 'h', 'j','k','l','m','n','p','q','r','s','t','v','w','x','y','z')
