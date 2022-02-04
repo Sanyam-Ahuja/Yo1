@@ -1,28 +1,3 @@
-"""Contains sets of English words from obtained from https://svnweb.freebsd.org/csrg/share/dict/.
-
-There are four sets in this module:
-
-english_words_set: A set of English words containing both upper- and
-    lower-case letters; with punctuation.
-english_words_lower_set: A set of English words containing lower-case
-    letters; with punctuation.
-english_words_alpha_set: A set of English words containing both upper-
-    and lower-case letters; with no punctuation.
-english_words_lower_alpha_set: A set of English words containing
-    lower-case letters; with no punctuation.
-"""
-
-import os
-
-web2_words = open(
-    os.path.join(os.path.dirname(os.path.abspath(__file__)), "web2.txt"),
-    "r"
-    ).read().split("\n")
-web2_lower = list(w.lower() for w in web2_words)
-
-web2_words_set = set(web2_words)
-web2_lower_set = set(web2_lower)
-
 english_words_set = {
     'a',
     'AAA',
