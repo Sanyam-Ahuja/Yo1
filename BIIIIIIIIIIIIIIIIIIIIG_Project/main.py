@@ -1,6 +1,6 @@
 import random
-import sys
-import subprocess
+# import sys
+# import subprocess
 # import os
 # os.system(r"python.exe")
 # def install(package):
@@ -13,8 +13,8 @@ chosen_1 = random.choice(word).lower()
 chosen = list(chosen_1)
 dict = PyDictionary()
 meaning = dict.meaning(chosen_1)
-print("Hello And Welcome To This Game of Guess the constat.\nIn This Game a random Word is generated And The meaning Is Given To You, now on the basis of that meaning you have to fill in the gaps with constants only and not any vowels as they are already given.\n if you answer right a dash will be filled up and if u answer wrong a life will be deducted. You have as many life as there are Dashes in the word. Didnt Get it Try playing For Once1")
-print(f"This is The Meaning Of The Word You Are Going To Guess{meaning}")
+print("Hello And Welcome To This Game of Guess the consonant.\nIn This Game a random Word is generated And The meaning Is Given To You, now on the basis of that meaning you have to fill in the gaps with consonant only and not any vowels as they are already given.\n if you answer right a dash will be filled up and if u answer wrong a life will be deducted. You have as many life as there are Dashes in the word. Didnt Get it Try playing For Once\n")
+print(f"\nThis is The Meaning Of The Word You Are Going To Guess{meaning}")
 chose_edit = list(chosen)
 def anti_vowel(c = input):
     newstr = c
