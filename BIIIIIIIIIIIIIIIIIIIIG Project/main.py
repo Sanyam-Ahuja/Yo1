@@ -6,12 +6,11 @@ import subprocess
 def install(package):
     subprocess.check_call([sys.executable, "-m", "pip", "install", package])
 install("PyDictionary")
-install("english_words")
 import PyDictionary
-from english_words import english_words_set
+import words
 from PyDictionary import PyDictionary
-words = list(english_words_set)
-chosen_1 = random.choice(words).lower()
+word = list(words.english_words_set)
+chosen_1 = random.choice(word).lower()
 chosen = list(chosen_1)
 dict = PyDictionary()
 meaning = dict.meaning(chosen_1)
