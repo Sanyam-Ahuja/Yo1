@@ -1,5 +1,4 @@
 import random
-import english_words
 import PyDictionary
 from english_words import english_words_set
 from PyDictionary import PyDictionary
@@ -44,3 +43,4 @@ def anti_vowel(c = input):
                 print("Oh No You Lost The Game")
 anti_vowel(chosen_1)
 print(f"The Real Word Was {chosen_1}")
+input("Press any Key To Exit....")
