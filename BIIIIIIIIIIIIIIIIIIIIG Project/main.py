@@ -1,12 +1,11 @@
 import random
-import sys
-import subprocess
-# import os
-# os.system(r"python.exe")
-def install(package):
-    subprocess.check_call([sys.executable, "-m", "pip", "install", package])
-install("PyDictionary")
-import PyDictionary
+# import sys
+# import subprocess
+# # import os
+# # os.system(r"python.exe")
+# def install(package):
+#     subprocess.check_call([sys.executable, "-m", "pip", "install", package])
+# install("PyDictionary")
 import words
 from PyDictionary import PyDictionary
 word = list(words.english_words_set)
