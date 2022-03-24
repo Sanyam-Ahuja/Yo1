@@ -49,4 +49,3 @@ if best_5 == "y":
     print(f"So Your Best {no_b} is {new_percentage}%")
 else:
     print("Thanks For Using The Percentage calculator, Com back again.")
-
